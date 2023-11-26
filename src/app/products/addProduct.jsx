@@ -53,11 +53,11 @@ export default function AddProduct() {
           <form onSubmit={handleSubmit}>
             <div className="form-control">
               <label className="label font-bold">Title</label>
-              <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} className="input w-full input-bordered" placeholder="Product Name" />
+              <input required type="text" value={title} onChange={(e) => setTitle(e.target.value)} className="input w-full input-bordered" placeholder="Product Name" />
             </div>
             <div className="form-control">
               <label className="label font-bold">Price</label>
-              <input type="number" value={price} onChange={(e) => setPrice(e.target.value)} className="input w-full input-bordered" placeholder="Price" />
+              <input required type="number" value={price} onChange={(e) => setPrice(e.target.value)} className="input w-full input-bordered" placeholder="Price" />
             </div>
             <div className="modal-action">
               <button type="button" className="btn" onClick={handleChange}>
